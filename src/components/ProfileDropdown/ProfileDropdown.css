@@ -1,0 +1,75 @@
+.profile-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 250px;
+  background-color: var(--card-bg-color);
+  color: var(--text-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 1rem;
+  z-index: 10;
+}
+
+.dropdown-close-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.dropdown-close-btn:hover {
+  color: var(--primary-hover-color);
+}
+
+.welcome-text {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: var(--text-color);
+  text-align: center;
+}
+
+.dropdown-btn {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 0;
+  background: var(--primary-color);
+  color: #ffffff !important; /* Explicitly set white text color and override global styles */
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-btn:hover {
+  background: var(--primary-hover-color);
+}
+
+.dropdown-divider {
+  margin: 1rem 0;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  opacity: 0.5;
+}
+
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  color: var(--text-color);
+  cursor: pointer;
+  justify-content: center;
+  transition: color 0.3s ease;
+}
+
+.theme-toggle:hover {
+  color: var(--primary-hover-color);
+}

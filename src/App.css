@@ -1,0 +1,141 @@
+/* Global Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f6f9; /* Light gray-blue background */
+  color: #2c3e50; /* Dark blue-gray text */
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: #ffffff; /* White background for content */
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo Styling */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms, transform 300ms;
+  cursor: pointer;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #3498db); /* Bright blue glow */
+  transform: scale(1.1); /* Slight zoom effect */
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafb); /* React blue glow */
+}
+
+/* Keyframes for Logo Animation */
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* Card Styling */
+.card {
+  padding: 2em;
+  background-color: #ffffff; /* White background for cards */
+  border: 1px solid #e1e5eb;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 300ms, box-shadow 300ms;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Read the Docs Text */
+.read-the-docs {
+  color: #7f8c8d; /* Neutral gray */
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
+/* Button Styling */
+button {
+  padding: 0.75rem 1.5rem;
+  background-color: #3498db; /* Bright blue */
+  color: #ffffff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 300ms, transform 300ms;
+}
+button:hover {
+  background-color: #1f78b4; /* Darker blue for hover */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Input Styling */
+input, textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #3498db; /* Blue border on focus */
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+/* Links */
+a {
+  color: #3498db;
+  text-decoration: none;
+  transition: color 300ms;
+}
+a:hover {
+  color: #1f78b4; /* Darker blue */
+}
+
+/* Footer Styling */
+footer {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #2c3e50; /* Dark blue-gray */
+  color: #ffffff;
+  text-align: center;
+  border-radius: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #root {
+    padding: 1.5rem;
+  }
+
+  .card {
+    padding: 1.5rem;
+  }
+
+  button {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+}

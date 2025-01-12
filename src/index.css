@@ -1,0 +1,137 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+
+  /* Default (Dark) Color Scheme */
+  --primary-color: #646cff;
+  --primary-hover-color: #535bf2;
+  --secondary-color: #f9a825;
+  --background-color: #242424;
+  --text-color: rgba(255, 255, 255, 0.87);
+  --card-bg-color: #1a1a1a;
+  --button-hover-color: #747bff;
+  --card-bg-color-translucent: rgba(26, 26, 26, 0.87);
+  color-scheme: dark;
+}
+
+[data-theme="light"] {
+  /* Light Mode Color Scheme */
+  --primary-color: #213547;
+  --primary-hover-color: #747bff;
+  --background-color: #f7f9fc;
+  --text-color: #213547;
+  --card-bg-color: #ffffff;
+  --card-bg-color-translucent: rgba(255, 255, 255, 0.87);
+}
+
+body {
+  @apply m-0 flex flex-col items-center justify-center min-h-screen bg-background text-text font-inter;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a {
+  @apply font-medium text-primary no-underline transition-colors ease-in-out duration-300;
+}
+a:hover {
+  @apply text-primary-hover;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-bold text-center;
+}
+
+h1 {
+  @apply text-4xl sm:text-5xl md:text-6xl leading-tight mb-6;
+}
+
+p {
+  @apply text-lg leading-relaxed mb-4;
+}
+
+button {
+  @apply rounded-lg border border-transparent py-3 px-6 text-base sm:text-lg md:text-xl font-medium bg-primary text-white transition-all duration-300 ease-in-out;
+}
+button:hover {
+  @apply bg-primary-hover;
+}
+button:focus,
+button:focus-visible {
+  @apply outline-none ring-4 ring-primary;
+}
+
+nav {
+  @apply bg-card py-4 px-6 w-full flex justify-between items-center shadow-lg sticky top-0 z-50;
+}
+
+nav ul {
+  @apply list-none flex flex-row gap-6;
+}
+
+nav ul li a {
+  @apply text-text py-2 px-4 rounded-lg hover:bg-primary-hover hover:text-white transition-colors ease-in-out;
+}
+
+.hero {
+  @apply bg-gradient-to-r from-primary to-primary-hover text-white flex flex-col justify-center items-center text-center w-full;
+  height: 350px;
+}
+
+.hero h1 {
+  @apply text-5xl sm:text-6xl font-extrabold mb-4;
+}
+
+.hero p {
+  @apply text-lg sm:text-xl md:text-2xl text-white max-w-3xl mx-auto;
+}
+
+.card {
+  @apply bg-card text-text p-6 rounded-lg shadow-md mb-6;
+}
+
+footer {
+  @apply bg-card text-center py-4 text-text mt-auto;
+}
+
+.footer-text {
+  @apply text-sm;
+}
+
+form {
+  @apply bg-card p-8 rounded-lg shadow-lg max-w-lg mx-auto;
+}
+
+form label {
+  @apply block text-sm font-medium mb-2;
+}
+
+form input,
+form textarea {
+  @apply w-full p-3 border border-secondary rounded-md bg-background text-text;
+}
+
+form input:focus,
+form textarea:focus {
+  @apply outline-none ring-2 ring-primary;
+}
+
+form textarea {
+  @apply h-32 resize-none;
+}
+
+form button {
+  @apply bg-primary text-white py-2 px-4 rounded-lg hover:bg-primary-hover transition duration-300;
+}
+
+[data-theme="light"] a:hover {
+  color: var(--button-hover-color);
+}
