@@ -2,9 +2,9 @@ import { useEffect } from "react";
 import "./Home.css"; // Import the CSS file
 
 const images = [
-  { src: "/assets/image1.jpg", caption: "High-performance CPUs for your PC build." },
-  { src: "/assets/image2.jpg", caption: "Next-generation GPUs for immersive gaming." },
-  { src: "/assets/image3.jpg", caption: "Reliable RAM to enhance system performance." },
+  { src: "/assets/image1.jpg", caption: "Add caption here" },
+  { src: "/assets/image2.jpg", caption: "Add caption here" },
+  { src: "/assets/image3.jpg", caption: "Add caption here" },
 ];
 
 const Home = () => {
@@ -28,14 +28,13 @@ const Home = () => {
 
   return (
     <div className="home-container">
-      <h1 className="home-title">Welcome to PC Parts Builder!</h1>
+      <h1 className="home-title">Welcome to ...</h1>
       <p className="home-description">
-        At PC Parts Builder, we make it easy to build your dream PC! Whether you are a gamer, creator, or enthusiast, our platform helps you find compatible parts tailored to your needs.
+        Insert your website description here. This is a placeholder text that can be replaced with your own content.
       </p>
       <p className="home-description">
-        Use our intuitive PC Parts Builder tool to mix and match components like CPUs, GPUs, motherboards, RAM, and more. Avoid compatibility headaches as we guide you to create a perfectly compatible build with seamless functionality.
+        Insert your website description here. This is a placeholder text that can be replaced with your own content.
       </p>
-      <p className="home-description">Get started now and bring your ideal PC to life!</p>
       <div className="home-images-wrapper">
         {images.map((image, index) => (
           <div
